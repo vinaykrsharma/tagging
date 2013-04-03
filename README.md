@@ -4,7 +4,7 @@ Tagging
 Tags selector
 
 
-##Uses
+##Usage
 ```html
 <ul id="tag-terms"></ul>
 ```
