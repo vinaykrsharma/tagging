@@ -6,7 +6,7 @@ Tags selector
 
 ##Usage
 ```html
-<ul id="tag-terms"></ul>
+<input type="text" name="x_input" id="tag-terms">
 ```
 
 ```js
