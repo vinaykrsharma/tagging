@@ -17,7 +17,6 @@
                 nodeClass: 'tagging-node',
                 target: null,
                 name: 'tagged',
-                placeholder: '#Tag here',
                 beforeAdd: function(i) {
                     return true;
                 },
@@ -31,10 +30,17 @@
                     return true;
                 }
             }, o);
-            var _t = $(this), _i = $('<input type="text" placeholder="' + o.placeholder + '">'), __tags = [];
+            var _t = $('<ul></ul>');
+            var _i = $(this), __tags = [];
+            if (_i.attr('name')) {
+                o.name = _i.attr('name');
+                _i.attr('name', o.name + '_tagger');
+            }
+            _i.attr('type', 'text');
+            _i.before(_t);
             _t.addClass(o.className);
-            _t.find('input:text').parent().remove();
             _t.append($('<li></li>').append(_i));
+
 
             /*
              * Binding keypress event to .tagging element's input which will
