@@ -38,7 +38,6 @@
                 o.name = _i.attr('name');
                 _i.attr('name', o.name + '_tagger');
             }
-            _i.attr('type', 'text');
             _i.before(_t);
             _t.addClass(o.className);
             _t.append($('<li></li>').append(_i));
