@@ -32,6 +32,8 @@
             }, o);
             var _t = $('<ul></ul>');
             var _i = $(this), __tags = [];
+
+            // Copying property of source element to hidden field
             if (_i.attr('name')) {
                 o.name = _i.attr('name');
                 _i.attr('name', o.name + '_tagger');
@@ -75,10 +77,11 @@
                 if (typeof(o.target) === 'string' && o.target[0] === '#' && $(o.target).length !== 0) {
                     o.target = $(o.target);
                 }
+                // Else leave as it is
             } else {
                 o.target = $('<input type="hidden" name="' + o.name + '">');
-                _t.after(o.target);
             }
+            _t.after(o.target);
 
             /*
              * Binding event on document to remove taggig li node if clicked
