@@ -1,0 +1,39 @@
+/*!
+ * Tagging
+ */
+
+@import "mixins.less";
+
+.tagging {
+    list-style: none inside none;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    .border-radius(4px);
+    cursor: text;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        .ie7-inline-block;
+        .tagging-common;
+        margin-left: 5px;
+		vertical-align: middle;
+    }
+
+    li.tagging-node {
+        color: #888;
+    }
+    
+    &> li input[type="text"] {
+        border: 0 none;
+        background: transparent !important;
+        line-height: 20px;
+        .tagging-common;
+        box-shadow: none;
+        display: block;
+    }
+}

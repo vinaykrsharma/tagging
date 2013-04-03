@@ -1,0 +1,45 @@
+// Mixins
+// ---------------------------------------------
+
+// Common
+.tagging-common() {
+    color: #555;
+    font-size: 13px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// IE7 inline-block
+.ie7-inline-block() {
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+}
+
+#font {
+  #family {
+    .serif() {
+      font-family: @serifFontFamily;
+    }
+    .sans-serif() {
+      font-family: @sansFontFamily;
+    }
+    .monospace() {
+      font-family: @monoFontFamily;
+    }
+  }
+}

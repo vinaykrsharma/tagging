@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="demo.css">
+        <link rel="stylesheet" href="tagging.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="tagging.js"></script>
+    </head>
+    <body>
+        <h1>Tagging example</h1>
+        <ul id="tag-terms"></ul>
+        <p><strong>Code</strong></p>
+        <p>HTML:</p>
+        <pre style="white-space: pre;">
+&lt;ul id="tags"&gt;&lt;/ul&gt;</pre>
+        <p>Script:</p>
+        <pre style="white-space: pre;">
+$('#tag-terms').tagging({
+    field: &quot;#someone&quot;,
+    name: &quot;tagged&quot;
+});</pre>
+        <script type="text/javascript">
+            $('#tag-terms').tagging({field: "#someone", name: "tagged"});
+        </script>
+    </body>
+</html>
