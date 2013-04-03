@@ -11,4 +11,4 @@ Tags selector
 
 ```js
 $('#tag-terms').tagging({field: "#someone", name: "tagged"});
-``
+```
