@@ -1,6 +1,11 @@
-/*!
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**!
+ * jQuery Tagging 1.0.0
+ * @version: 1.0.0
+ * @author: VINAY Kr. SHARMA http://www.vinay-sharma.com/
+ * @date: 2013-04-03
+ * @copyright: Copyright (c) 2013 VINAY Kr. SHARMA. All rights reserved.
+ * @license: Licensed under Apache License v2.0. See http://www.apache.org/licenses/LICENSE-2.0
+ * @website: http://www.vinay-sharma.com/
  */
 ;
 (function($) {
