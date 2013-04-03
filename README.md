@@ -5,10 +5,13 @@ Tags selector
 
 
 ##Usage
+
+**HTML**
 ```html
 <input type="text" name="x_input" id="tag-terms">
 ```
 
+**JavaScript**
 ```js
 $('#tag-terms').tagging({field: "#someone", name: "tagged"});
 ```
