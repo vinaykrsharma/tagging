@@ -17,6 +17,7 @@
                 nodeClass: 'tagging-node',
                 target: null,
                 name: 'tagged',
+                placeholder: '#Tag here',
                 beforeAdd: function(i) {
                     return true;
                 },
@@ -30,7 +31,7 @@
                     return true;
                 }
             }, o);
-            var _t = $(this), _i = $('<input type="text">'), __tags = [];
+            var _t = $(this), _i = $('<input type="text" placeholder="' + o.placeholder + '">'), __tags = [];
             _t.addClass(o.className);
             _t.find('input:text').parent().remove();
             _t.append($('<li></li>').append(_i));
